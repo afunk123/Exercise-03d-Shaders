@@ -22,7 +22,7 @@ func _physics_process(_delta):
 		$Eye2/Pupil/Sprite.position.x = 7
 		$Eye1/Pupil.look_at(ball.position)
 		$Eye2/Pupil.look_at(ball.position)
-		var d = ((($Mouth.global_position.y - ball.global_position.y)/Global.VP.y) - 0.2)*2
+		var d = ((($Mouth.global_position.y - ball.global_position.y)/Global.VP.y)-0.2)*2
 		d = clamp(d, -1, 1)
 		$Mouth.scale.y = d
 	else:
